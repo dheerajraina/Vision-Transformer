@@ -1,4 +1,4 @@
-from .settings import *
+from settings import *
 import keras
 from keras import ops
 import tensorflow as tf
