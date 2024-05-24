@@ -1,3 +1,4 @@
+'''-----------------------------Hyper Params---------------------------------'''
 learning_rate = 0.001
 weight_decay = 0.0001
 batch_size = 256
@@ -16,3 +17,9 @@ mlp_head_units = [
     2048,
     1024,
 ]  # Size of the dense
+
+
+'''-----------------------------Constants---------------------------------'''
+
+num_classes = 100
+input_shape = (32, 32, 3)
