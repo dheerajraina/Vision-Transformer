@@ -17,3 +17,10 @@ def data_augmentation(X_train):
     data_augmentation.layers[0].adapt(X_train)
 
     return data_augmentation
+
+
+def mlp(x, hidden_units, dropout_rate):
+    for units in hidden_units:
+        x = keras.layers.Dense(units, activation=keras.activations.gelu)(x)
+        x = keras.layers.Dropout(dropout_rate)(x)
+    return x
